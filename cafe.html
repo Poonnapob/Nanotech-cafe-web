@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nanotech Cafe - ร้านน้ำปั่น</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <h1>Nanotech Cafe</h1>
+        <p>Build By Poonnapob Sansom</p>
+        <p>สดชื่นทุกหยด สุขภาพดีทุกแก้ว</p>
+    </header>
+
+    <main class="container">
+        <section id="menu-section">
+            <h2>เมนูเครื่องดื่ม (สำหรับรับออเดอร์)</h2>
+            <div class="menu-grid">
+               
+                <div class="menu-item">
+                    <h3>น้ำมะพร้าวปั่นนมสด (ใหญ่)</h3>
+                    <p class="price" data-price="35">35 บาท</p>
+                    <div class="quantity-control">
+                        <label for="coconut-large-qty">จำนวน:</label>
+                        <input type="number" id="coconut-large-qty" min="0" value="0">
+                    </div>
+                </div>
+
+               
+                <div class="menu-item">
+                    <h3>น้ำมะพร้าวปั่นนมสด (เล็ก)</h3>
+                    <p class="price" data-price="25">25 บาท</p>
+                    <div class="quantity-control">
+                        <label for="coconut-small-qty">จำนวน:</label>
+                        <input type="number" id="coconut-small-qty" min="0" value="0">
+                    </div>
+                </div>
+
+               
+                <div class="menu-item">
+                    <h3>น้ำชง (ชาไทย/ชาเขียว)</h3>
+                    <p class="price" data-price="25">25 บาท</p>
+                    <div class="quantity-control">
+                        <label for="tea-qty">จำนวน:</label>
+                        <input type="number" id="tea-qty" min="0" value="0">
+                    </div>
+                </div>
+
+             
+                <div class="menu-item">
+                    <h3>มัทฉะลาเต้</h3>
+                    <p class="price" data-price="40">40 บาท</p>
+                    <div class="quantity-control">
+                        <label for="matcha-qty">จำนวน:</label>
+                        <input type="number" id="matcha-qty" min="0" value="0">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <section id="sales-summary">
+            <h2>สรุปยอดขายวันนี้</h2>
+            <button id="calculate-btn">คำนวณยอดขาย</button>
+            <div class="summary-details">
+                <h3>รายละเอียด:</h3>
+                <ul id="sales-details-list">
+                    <li>ยังไม่มีรายการขาย</li>
+                </ul>
+                <hr>
+                <h3 id="total-sales">ยอดรวมทั้งหมด: 0 บาท</h3>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; build by Nanotech Cafe. All rights reserved.</p>
+    </footer>
+
+    <script src="cript.js"></script>
+</body>
+</html>
